@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang=pt-br>
+  <head>
+    <title>Atividades sobre JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta id="headC" name="theme-color" content="#f7df1e"/>
+    <link rel="icon" href="img/JS.png">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/46a92e2a68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script  defer src="js/config.js"></script>
+  </head>
+  <body class="text-white" onload="startUP();a();c();">
+    <!--Modal da SDA-->
+    <div class="modal fade" id="SDAM" tabindex="-1" role="dialog" aria-labelledby="SDAMTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content rounded-0 shadow-none text-black">
+                <div class="modal-header bg-alpha">
+                    <h5 class="modal-title  w-100 text-center" id="SDAMTitle">Caixa</h5>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <h6 class="text-center">Escolha a forma de pagamento a vista</h6>
+                        <hr>
+                        <center>
+                            <table id="mod-SDA" class="table-sm table-responsive-lg">
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-radio"><input class="custom-control-input shadow-none" id="Cxz1" TYPE="radio" NAME="pag" VALUE="a"><label class="custom-control-label align-middle" for="Cxz1"></label></div>
+                                    </td>
+                                    <td>
+                                        <img src="img/pagamento1.jpg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-radio"><input class="custom-control-input shadow-none" id="Cxz2" TYPE="radio" NAME="pag" VALUE="b"><label class="custom-control-label align-middle" for="Cxz2"></label></div>
+                                    </td>
+                                    <td>
+                                        <img src="img/pagamento2.jpg">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-radio"><input class="custom-control-input shadow-none" id="Cxz3" TYPE="radio" NAME="pag" VALUE="c"><label class="custom-control-label align-middle" for="Cxz3"></label></div>
+                                    </td>
+                                    <td>
+                                        <img src="img/pagamento3.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+                    </table>
+                </div>
+                <div class="modal-footer bg-alpha">
+                    <button type="button" class="btn shadow-none btn-danger" data-dismiss="modal">Cancelar comprar</button>
+                    <button type="button" class="btn shadow-none btn-primary">Completar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Topo Começo-->
+    <nav id="nv" class="navbar bg-light sticky-top navbar-expand-lg navbar-light">
+        <div class="d-inline-flex m-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/JS.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <div class="btn-group">
+                    <a id="btN1" class="btn btn-lg btn-link shadow-none" href="http://atividades-weider.surge.sh/index.html" target="_self">Home</a>
+                    <a id="btN2" class="btn btn-lg btn-link shadow-none" href="http://atividades-weider.surge.sh/tabela.html" target="_self">Tabela Periodica</a>
+                    <a id="btN2" class="btn btn-lg btn-link shadow-none" href="http://atividades-weider.surge.sh/contato.html" target="_self">Contato</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!--Conteúdo Começo-->
+    <div class="atividade1">
+        <div class="container">
+            <FORM ACTION ="mailto:teste@gmail.com" METHOD="POST" ENCTYPE="text/plain" NAME="cadastro">
+                <br>
+                <span class="bg-light">
+                    <h3 class="text-center">Atividade 1 a 4</h3>
+                    <h5><span id="NP"></span> Por favor, preencha os campos abaixo e depois clique no <span class="font-weight-bold">botão Enviar</span>. Caso necessite apagar os dados, dê um clique no <span class="font-weight-bold">botão Limpar</span>. Muito Obrigado!</h5>
+                </span>
+                <br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Nome Completo</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="TEXT" NAME="nome">
+                </div>
+                <br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> Seu e-mail</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="TEXT" NAME="email">
+                </div>
+                <br>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item active">Sexo</li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-radio"><INPUT class="custom-control-input shadow-none" id="customRadio1" TYPE="RADIO" NAME="sexo" VALUE="f"><label class="custom-control-label align-middle" for="customRadio1">Feminino</label></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-radio"><INPUT class="custom-control-input shadow-none" id="customRadio2" TYPE="RADIO" NAME="sexo" VALUE="m"><label class="custom-control-label align-middle" for="customRadio2">Masculino</label></div>
+                    </li>
+                </ul>
+                <br>
+                <ul class="list-group list-group-horizontal-sm ">
+                    <li class="list-group-item active">Estado Civil</li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-radio"><INPUT class="custom-control-input shadow-none" id="customRadio4" TYPE="RADIO" NAME="civil" VALUE="s"><label class="custom-control-label align-middle" for="customRadio4">Solteiro</label></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-radio"><INPUT class="custom-control-input shadow-none" id="customRadio5" TYPE="RADIO" NAME="civil" VALUE="c"><label class="custom-control-label align-middle" for="customRadio5">Casado</label></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-radio"><INPUT class="custom-control-input shadow-none" id="customRadio6" TYPE="RADIO" NAME="civil" VALUE="e"><label class="custom-control-label align-middle" for="customRadio6">Enrolado</label></div>
+                    </li>
+                </ul>
+                <br>
+                <ul class="list-group list-group-horizontal-sm ">
+                    <li class="list-group-item active">Bens que possui</li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input shadow-none" id="customCheck1" TYPE="CHECKBOX" NAME="bens" VALUE="c"><label class="custom-control-label align-middle" for="customCheck1">Casa</li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input shadow-none" id="customCheck2" TYPE="CHECKBOX" NAME="bens" VALUE="a"> <label class="custom-control-label align-middle" for="customCheck2">Automovel</li>
+                    <li class="list-group-item">
+                        <div class="custom-control custom-checkbox"><input type="checkbox" class="custom-control-input shadow-none" id="customCheck3" TYPE="CHECKBOX" NAME="bens" VALUE="m"> <label class="custom-control-label align-middle" for="customCheck3">Moto</li>
+                </ul>
+                <br>
+                <SELECT class="custom-select text-decoration-none shadow-none" NAME="faixaidade">
+                    <option selected value=""> Faixa de Idade</option>
+                    <OPTION VALUE="3a10"> 3 a 10 anos</OPTION>
+                    <OPTION VALUE="11a25"> 11 a 25 anos</OPTION>
+                    <OPTION VALUE="26a35"> 26 a 35 anos</OPTION>
+                    <OPTION VALUE="36a55"> 36 a 55 anos</OPTION>
+                    <OPTION VALUE="56a90"> 56 a 90 anos</OPTION>
+                </SELECT>
+                <br><br>
+                <SELECT class="custom-select text-decoration-none shadow-none" NAME="hobby">
+                    <option selected value="">Hobby preferido</option>
+                    <OPTION VALUE="livros"> Ler livros
+                    <OPTION VALUE="musica"> Ouvir música
+                    <OPTION VALUE="cinema"> Assistir filmes
+                    <OPTION VALUE="esporte"> Praticar esportes
+                    <OPTION VALUE="games"> Jogar games
+                </SELECT>
+                <br><br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Observações Gerais</span>
+                    </div>
+                    <TEXTAREA NAME="observacoes" class="form-control text-decoration-none shadow-none"></TEXTAREA>
+                </div>
+                <br>
+                <div class="text-center">
+                    <INPUT class="btn shadow-none btn-primary " TYPE="BUTTON" VALUE="Enviar os dados" onclick="validar()">
+                    <INPUT class="btn shadow-none btn-danger " TYPE="RESET" VALUE="Limpar os dados">
+                </div>
+                <br>
+            </FORM>
+        </div>
+    </div>
+    <div class="atividade5">
+        <div class="container text-center">
+            <form name="ATV5">
+                <br>
+                <h3>Atividade 5 e 5.2</h3>
+                <br><br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Digite uma frase</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="text" NAME="Frase" placeholder="Frase...">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-success shadow-none" onclick="ativ5()">Escrever</button>
+                        <button type="reset" class="btn btn-danger shadow-none" onclick="document.getElementById('ATV5').innerHTML = ''">Apagar</button>
+                    </div>
+                </div>
+                <span id="ATV5">
+                    <script defer>let a = () => ativ5();</script>
+                </span>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade6">
+        <div class="container text-center">
+            <form name="ATV6">
+                <br>
+                <h3>Atividade 6</h3>
+                <br><br>
+                <h5 id="ATV6">
+                    <script defer>let b = () => ativ6();</script>
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade7">
+        <div class="container text-justify">
+            <form name="ATV7">
+                <br>
+                <h3 class="text-center">Atividade 7</h3>
+                <br><br>
+                <h5 id="ATV7">
+                    Dê um clique no botão para abrir uma janela simples:<br><br>
+                    <input class="btn btn-block btn-atv7 shadow-none" type="button" name="abrir" value="Janela1" onClick="abre1()"><br>
+                    Dê um clique no botão para abrir uma janela de 350px de largura por 400px de altura, sem barras e menus:<br><br>
+                    <input class="btn btn-block btn-atv7 shadow-none" type="button" name="abrir" value="Janela2" onClick="abre2()"><br>
+                    Dê um clique no botão para abrir uma janela com menu e barra de rolagens, mas sem barra de endereço e barra padrão:<br><br>
+                    <input class="btn btn-block btn-atv7 shadow-none" type="button" name="abrir" value="Janela3" onClick="abre3()"><br>
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade8">
+        <div class="container text-center">
+            <form name="ATV8">
+                <br>
+                <h3>Atividade 8</h3>
+                <br><br>
+                <button type="button" class="btn btn-atv8 btn-block shadow-none" onclick="ativ8()">Ok</button>
+                <br><br>
+                <h5 id="ATV8"></h5>
+                <h6>Esta linha foi escrita em HTML.</h6>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade9">
+        <div class="container text-center">
+            <form name="ATV9">
+                <br>
+                <h3>Atividade 9</h3>
+                <br><br>
+                <h5>
+                    Informe um número para saber seu valor ao cubo e, em seguida, pressione a tecla TAB ou dê um clique fora da caixa de texto.<br><br>
+                </h5>
+                <input type ="text" class="form-control text-decoration-none shadow-none" name="aocubo" value="" onBlur = "ativ9(this.value)">
+                <br><br>
+                <h6 id="ATV92"></h6>
+                <h6 id="ATV9"></h6>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade10">
+        <div class="container text-center">
+            <form name="ATV10">
+                <br>
+                <h3>Atividade 10</h3>
+                <br><br>
+                <h5 id="ATV10">
+                    <br>
+                    <script defer>let c = () => ativ10();</script>
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade11">
+        <div class="container text-center">
+            <form name="ATV11">
+                <br>
+                <h3>Atividade 11</h3>
+                <br><br>
+                <h3>Pergunta: Quantos anos tem um século?<br></h3>
+                <br><br>
+                <div class="btn-group-lg">
+                    <button type="button" class="btn btn-atv11 shadow-none" onclick="ativ11('a')">10 anos</button> 
+                    <button type="button" class="btn btn-atv11 shadow-none" onclick="ativ11('b')">100 anos</button> 
+                    <button type="button" class="btn btn-atv11 shadow-none" onclick="ativ11('c')">1000 anos</button> 
+                    <button type="button" class="btn btn-atv11 shadow-none" onclick="ativ11('d')">Não sei</button> 
+                </div>
+                <br><br>
+                <h5 id="ATV11">
+                    <br>
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade12">
+        <div class="container text-center">
+            <form name="ATV12">
+                <br>
+                <h3>Atividade 12</h3>
+                <br><br>
+                <h5 id="ATV12">
+                    Entre com os valores nos campos e dê um clique nos botões. <br><br>
+                </h5>
+                <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Valor 1</span>
+                        </div>
+                        <INPUT class="form-control text-decoration-none shadow-none" type="number" name="c1" value="" size=5 maxlength=5></div><br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Valor 2</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" type="number" name="c2" value="" size=5 maxlength=5>
+                </div>
+                <br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Valor 3</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" type="number" name="c3" value="" size=5 maxlength=5>
+                </div>
+                <br>
+                <div class="btn-group btn-group-lg">
+                    <input type="button" class="btn btn-atv12 shadow-none" value="Somar" onclick="somar()">
+                    <button type="reset" class="btn btn-danger shadow-none">Apagar</button>
+                    <input type="button" class="btn btn-atv12 shadow-none" value="Multiplicar" onclick="multiplicar()">
+                </div>
+                <br><br>
+                <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Resposta</span>
+                        </div>
+                        <INPUT class="form-control text-decoration-none shadow-none" readonly type="text" name="c4" value="" size=10 maxlength=0>
+                    </div>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade13">
+        <div class="container text-center">
+            <form name="ATV13">
+                <br>
+                <h3>Atividade 13</h3>
+                <small><span class="err">Nota</span>: os campos marcados com asterisco são obrigatórios.</small>
+                <br><br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><span class="err">*</span>Nome Completo</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="text" NAME="nome13" required placeholder="Rodrigo..." onblur="campo_obrigatorio(this)">
+                </div>
+                <br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><span class="err">*</span>Cidade</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="text" NAME="cidade13" required placeholder="Belo Horizonte" onblur="campo_obrigatorio(this)">
+                </div>
+                <br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Telefone</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="text" NAME="telefone13" placeholder="(31) 9 1234-5678">
+                </div>
+                <br>
+                <small id="ATV13" class="err">
+                    <br>
+                </small>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade14">
+        <div class="container text-center">
+            <form name="ATV14">
+                <br>
+                <h3>Atividade 14</h3>
+                <br><br>
+                <h6>Clique na Imagem</h6>
+                <br><br>
+                <h5 id="ATV14">
+                    <img class="ATV14" id="IMG-14" src="img/PokeBall.png" onclick="ativ14()">
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade15">
+        <div class="container text-center">
+            <form name="ATV15">
+                <br>
+                <h3>Atividade 15</h3>
+                <br><br>
+                <h5 id="ATV15">
+                    
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade16">
+        <div class="container text-center">
+            <form name="ATV16">
+                <br>
+                <h3>Atividade 16</h3>
+                <br><br>
+                <h5 id="ATV16">
+                    
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade17">
+        <div class="container text-center">
+            <form name="ATV17">
+                <br>
+                <h3>Atividade 17</h3>
+                <br><br>
+                <h5>
+                    Digite um valor de 1 a 31
+                </h5>
+                <br>
+                <div class="input-group input-group-lg">
+                    <input type="number" class="form-control shadow-none" id="ATV171">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-success shadow-none" onclick="ativ17()">Verificar</button>
+                        <button type="reset" class="btn btn-danger shadow-none">Apagar</button>
+                    </div>
+                </div>
+                <br><br>
+                <h5 id="ATV17">
+                    <br>
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade18">
+        <div class="container text-center">
+            <form name="Reajuste">
+                <br>
+                <h3>Atividade 18</h3>
+                <br><br>
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Informe o seu salário</span>
+                    </div>
+                    <INPUT class="form-control text-decoration-none shadow-none" TYPE="number" NAME="Reajustar" placeholder="0">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-success shadow-none" onclick="ativ18()">Reajustar</button>
+                        <button type="reset" class="btn btn-danger shadow-none">Apagar</button>
+                    </div>
+                </div>
+                <br><Br>
+                <h5 id="ATV18">
+                    <br>
+                </h5>
+            </form>
+        </div>
+        <br><br>
+    </div>
+    <div class="atividadeSDA">
+        <div class="container-fluid text-center">
+            <form name="SDA">
+                <br>
+                <h3 class="text-black">Atividade SDA</h3>
+                <br><br>
+                <table id="Tb-AT2" class="table text-center table-striped T-rob text-black text-nowrap align-middle table-responsive-lg">
+                    <thead class="table-dark bg-info">
+                        <tr>
+                            <th class="align-middle">#</th>
+                            <th class="align-middle">Produto</th>
+                            <th class="align-middle">Descrição</th>
+                            <th class="align-middle">Preço Unit.</th>
+                            <th class="text-center align-middle">Quantidade</th>
+                            <th class="align-middle">Preço Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="align-middle" scope="row">1</th>
+                            <td class="w-25">
+                                <img class="imgtab" src="loja/perfume1.png"> 
+                            </td>
+                            <td class="align-middle">Mon Guerlain Sensuelle - Feminino</td>
+                            <td class="align-middle">R$329,00</td>
+                              <td class="" colspan="0">
+                                  <div class="input-group flex-nowrap input-group-spinner">
+                                      <div class="input-group-prepend">
+                                          <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Ca(i=0);"><i class="fa fa-minus-circle"></i>
+                                          </button>
+                                    </div>
+                                    <input id="C1" style="text-align: center" class="input">
+                                    <div class="input-group-append">
+                                        <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Ca(i=1);">
+                                                <i class="fa fa-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                </td>
+                                <td id="R1" class="align-middle">R$0,00</td>
+                            </tr>
+                            <tr>
+                              <th class="align-middle" scope="row">2</th>
+                              <td class="w-25">
+                                  <img class="imgtab" src="loja/perfume2.png"> 
+                              </td>
+                              <td class="align-middle">Vivara V - Masculino</td>
+                              <td class="align-middle">R$250,00</td>
+                              <td class="" colspan="0">
+                                  <div class="input-group flex-nowrap input-group-spinner">
+                                      <div class="input-group-prepend">
+                                          <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cb(i=0)">
+                                            <i class="fa fa-minus-circle"></i>
+                                          </button>
+                                    </div>
+                                    <input id="C2" style="text-align: center" class="input">
+                                    <div class="input-group-append">
+                                        <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cb(i=1);">
+                                                <i class="fa fa-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                              <td id="R2" class="align-middle">R$0,00</td>
+                            </tr>
+                            <tr>
+                              <th class="align-middle" scope="row">3</th>
+                              <td class="w-25">
+                                  <img class="imgtab" src="loja/perfume3.png"> 
+                              </td>
+                              <td class="align-middle">212 VIP Rosé Carolina Herrera - Feminino</td>
+                              <td class="align-middle">R$245,00</td>
+                              <td class="" colspan="0">
+                                  <div class="input-group flex-nowrap input-group-spinner">
+                                      <div class="input-group-prepend">
+                                          <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cc(i=0)">
+                                            <i class="fa fa-minus-circle"></i>
+                                          </button>
+                                    </div>
+                                    <input id="C3" style="text-align: center" class="input">
+                                    <div class="input-group-append">
+                                        <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cc(i=1);">
+                                                <i class="fa fa-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                </td>
+                              <td id="R3" class="align-middle">R$0,00</td>
+                            </tr>
+                            <tr>
+                              <th class="align-middle" scope="row">4</th>
+                              <td class="w-25">
+                                  <img class="imgtab" src="loja/perfume4.png"> 
+                              </td>
+                              <td class="align-middle">Chanel Bleu de Chanel - Masculino</td>
+                              <td class="align-middle">R$1.235,00</td>
+                              <td class="" colspan="0">
+                                  <div class="input-group flex-nowrap input-group-spinner">
+                                      <div class="input-group-prepend">
+                                          <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cd(i=0)">
+                                            <i class="fa fa-minus-circle"></i>
+                                          </button>
+                                    </div>
+                                    <input id="C4" style="text-align: center" class="input">
+                                    <div class="input-group-append">
+                                        <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cd(i=1);">
+                                                <i class="fa fa-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                </td>
+                              <td id="R4" class="align-middle">R$0,00</td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle" scope="row">5</th>
+                                <td class="w-25">
+                                    <img class="imgtab" src="loja/perfume5.png"> 
+                                </td>
+                                <td class="align-middle">Paco Rabanne Olympéa Intense - Feminino</td>
+                                <td class="align-middle">R$549,00</td>
+                                <td class="" colspan="0">
+                                  <div class="input-group flex-nowrap input-group-spinner">
+                                      <div class="input-group-prepend">
+                                          <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Ce(i=0)">
+                                            <i class="fa fa-minus-circle"></i>
+                                          </button>
+                                    </div>
+                                    <input id="C5" style="text-align: center" class="input">
+                                    <div class="input-group-append">
+                                        <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Ce(i=1);">
+                                                <i class="fa fa-plus-circle"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                </td>
+                                <td id="R5" class="align-middle">R$0,00</td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle">Totais</th>
+                                <td class="align-middle"></td>
+                                <td class="align-middle">
+                                    <justify>
+                                        <button id="TbB1-AT2" class="btn btn-link T-aRobM shadow-none text-decoration-none" type="button" onclick="ATVSDA()">Check do Total</button>
+                                    </justify>
+                                </td>
+                                <td class="align-middle">
+                                    <justify>
+                                        <button id="TbB2-AT2" class="btn btn-link T-aRobM shadow-none text-decoration-none" type="button" data-toggle="modal" data-target="#SDAM">Ir para o Caixa</button>
+                                    </justify>
+                                </td>
+                                <td id="C6" class="text-center align-middle">0</td>
+                                <td id="R6" class="align-middle">R$0,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <br><Br>
+                <h5 id="ATVSDA">
+                    <br>
+                </h5>
+            </form>
+        </div>
+        <br><br>
+    </div>
+    <!--Conteúdo Fim-->
+    <!--Rodapé Começo-->
+    <footer id="Rodapé" class="py-4 bg-light text-black">
+            <div class="container align-content-center">
+                <p id="rodP" class="m-0 text-center">Copyright &copy; Trabalho - Weider 2019</p>
+            </div>
+    </footer>
+    <!--Rodapé fim-->
+</body>
+</html>
