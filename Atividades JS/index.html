@@ -17,13 +17,13 @@
     <!--Modal da SDA-->
     <div class="modal fade" id="SDAM" tabindex="-1" role="dialog" aria-labelledby="SDAMTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content rounded-0 shadow-none text-black">
+            <div class="modal-content rounded-0 shadow-none text-black" onclick="ATVSDAPag()">
                 <div class="modal-header bg-alpha">
                     <h5 class="modal-title  w-100 text-center" id="SDAMTitle">Caixa</h5>
                 </div>
                 <div class="modal-body">
                     <table>
-                        <h6 class="text-center">Escolha a forma de pagamento a vista</h6>
+                        <h6 id="idPAG" class="text-center">Escolha a forma de pagamento a vista</h6>
                         <hr>
                         <center>
                             <table id="mod-SDA" class="table-sm table-responsive-lg">
@@ -462,14 +462,38 @@
         </div>
         <br><br>
     </div>
+    <div class="atividade19">
+        <div class="container text-center">
+            <form name="ATV19">
+                <br>
+                <h3>Atividade 19 - <img class="jq" src="img/JQ.png"></h3>
+                <br><br>
+                <button type="button" id="btn19" class="btn btn-block btn-atv19 shadow-none"><span class="btn19-a">Animar</span></button>
+                <br><br>
+                <h5 id="ATV19">
+                    <div id="cuBão" class="CuBonito">4</div>
+                </h5>
+                <br><br>
+            </form>
+        </div>
+    </div>
+    <div class="atividade20">
+        <div class="container text-center" ng-app>
+        <br><br>
+        <h3>Atividade 20 - <img class="Ajs" src="img/AngularJS_logo.svg"></h3>
+        <br><br>
+        <a href="page/AJS.html" class="btn btn-atv20 btn-block shadow-none rounded-0">Lista De Compras</a>
+        <br><br>
+    </div>
+    </div>
     <div class="atividadeSDA">
         <div class="container-fluid text-center">
             <form name="SDA">
                 <br>
                 <h3 class="text-black">Atividade SDA</h3>
                 <br><br>
-                <table id="Tb-AT2" class="table text-center table-striped T-rob text-black text-nowrap align-middle table-responsive-lg">
-                    <thead class="table-dark bg-info">
+                <table id="Tb-AT2" class="table text-center table-striped T-rob text-black text-nowrap align-middle table-responsive-lg rounded">
+                    <thead class="table-dark bg-info rounded">
                         <tr>
                             <th class="align-middle">#</th>
                             <th class="align-middle">Produto</th>

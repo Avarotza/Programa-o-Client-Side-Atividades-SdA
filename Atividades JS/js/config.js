@@ -4,6 +4,7 @@ setInterval(() =>
     b();ativ15();ativ16();
 }, 1000);
 var iI = 0;
+var indice=0;
 //Ativdade 1 ao 4
 const startUP = () =>
 {
@@ -16,8 +17,8 @@ const startUP = () =>
     {
         document.getElementById("NP").innerHTML = "Olá visitante!";
     }
-}
-const validar = () =>
+},
+validar = () =>
 {
     if (document.cadastro.nome.value == "")
     {
@@ -37,9 +38,9 @@ const validar = () =>
         document.cadastro.observacoes.focus();
         return false;
     }
-}
+},
 //Atividade 5
-const ativ5 = () =>
+ativ5 = () =>
 {
     let frase = document.ATV5.Frase.value;
     if(frase == "" || frase == null)
@@ -57,54 +58,54 @@ const ativ5 = () =>
     bKP = bKP + ("O caractere do meio: " + frase.charAt(parseInt(frase.length/2)) + "<br>");
     bKP = bKP + ("O último caractere: " + frase.charAt(frase.length-1));
     document.getElementById("ATV5").innerHTML = (bKP);
-}
+},
 //Atividade 6
-const ativ6 = () =>
+ativ6 = () =>
 {
     let hoje = new Date();
     let texto = ("Data e hora completa: "+hoje)+("<br>Apenas o dia: "+hoje.getDate())+("<br>Apenas o mês: "+(hoje.getMonth()+1))+("<br>Apenas o ano: "+hoje.getFullYear())+("<br>Apenas o dia da semana: "+(hoje.getDay()+1))+("<br>Apenas a hora e minutos: "+hoje.getHours()+":"+hoje.getMinutes());;
     document.getElementById("ATV6").innerHTML = (texto);
-}
+},
 //Atividade 7
-const abre1 = () =>
+abre1 = () =>
 {
     window.open("http://www.google.com");
-}
-const abre2 = () =>
+},
+abre2 = () =>
 {
     window.open("http://www.google.com","simples","width=350,height=400");
-}
-const abre3 = () =>
+},
+abre3 = () =>
 {
     window.open("http://www.google.com","simples","menubar,scrollbars,width=300, height=200");
-}
+},
 //Atividade 8
-const ativ8 = () =>
+ativ8 = () =>
 {
     alert("Esta caixa de dialogo foi construida em JS.");
     document.getElementById("ATV8").innerHTML = ("Esta linha tb foi escrita em JS.<br>");
-}
+},
 //Atividade 9
-const cubo = (x) =>
+cubo = (x) =>
 {
     return x*x*x;
-}
-const quadrado = (x) =>
+},
+quadrado = (x) =>
 {
     return x*x;
-}
-const ativ9 = (y) =>
+},
+ativ9 = (y) =>
 {
     document.getElementById("ATV9").innerHTML = ("O quadrado de "+ y +" é igual a "+quadrado(y));
     document.getElementById("ATV92").innerHTML = ("O cubo de "+y+" é "+cubo(y));
-}
+},
 //Atividade 10
-const ativ10 = () =>
+ativ10 = () =>
 {
     document.getElementById("ATV10").innerHTML = ("<br>Título da janela aberta: "+document.title+"<br>")
-}
+},
 //Atividade 11
-const ativ11 = (x) =>
+ativ11 = (x) =>
 {
     switch(x)
     {
@@ -121,17 +122,17 @@ const ativ11 = (x) =>
             document.getElementById("ATV11").className = "per";
             break;
     }
-}
+},
 //Atividade 12
-const somar = () =>
+somar = () =>
 {
     let H = document.ATV12.c1.value || 0;
     let J = document.ATV12.c2.value || 0;
     let K = document.ATV12.c3.value || 0;
     let x = eval(H) + eval(J) + eval(K) || 0;
     document.ATV12.c4.value = x;
-}
-const multiplicar = () =>
+},
+multiplicar = () =>
 {
     let zH = document.ATV12.c1.value;
     let zJ = document.ATV12.c2.value;
@@ -148,17 +149,17 @@ const multiplicar = () =>
     {
         document.ATV12.c4.value = x;
     }
-}
+},
 //Atividade 13
-const campo_obrigatorio = (x) =>
+campo_obrigatorio = (x) =>
 {
     if(x.value=="")
     {
         document.getElementById("ATV13").innerHTML = ("O campo " + x.name + " não pode ficar em branco.")
     }
-}
+},
 //Atividade 14
-const ativ14 = () =>
+ativ14 = () =>
 {
     if(iI%2 == 0)
     {
@@ -169,9 +170,9 @@ const ativ14 = () =>
         document.getElementById("IMG-14").src = "img/PokeBall.png";
     }
     iI++;
-}
+},
 //Atividade 15
-const ativ15 = () =>
+ativ15 = () =>
 {
     let dia = new Date();
     let hora = dia.getHours();
@@ -221,9 +222,9 @@ const ativ15 = () =>
     {
         document.getElementById("ATV15").innerHTML = ("Meia-noite! Já é amanhã!");
     }
-}
+},
 //Atividade 16
-const ativ16 = () =>
+ativ16 = () =>
 {
     let dia = new Date();
     let hora = dia.getHours()
@@ -234,9 +235,9 @@ const ativ16 = () =>
     else {
     document.getElementById("ATV16").innerHTML = ("<span><i class='far icone fa-dizzy'></i></span>");
     }
-}
+},
 //Atividade 17
-const ativ17 = () =>
+ativ17 = () =>
 {
     let b;
     let texto;
@@ -254,9 +255,9 @@ const ativ17 = () =>
     }
     document.getElementById("ATV17").innerHTML = texto;
     document.getElementById("ATV17").className = classe;
-}
+},
 //Atividade 18
-const ativ18 = () =>
+ativ18 = () =>
 {
     let sal = parseFloat(document.Reajuste.Reajustar.value) || 0;
     let frase = "O Seu reajuste é de: ";let frase2 = " ,totalizando: "
@@ -288,6 +289,69 @@ const ativ18 = () =>
         document.getElementById("ATV18").innerHTML = "<BR>";
     }
 }
+//Atividade 19
+$(document).ready(function()
+{
+  $("#btn19").click(function()
+    {
+    	switch(indice)
+        {
+          case 0:$("#cuBão").animate({left: '126.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+          case 1:$("#cuBão").animate({top: '50vh',left:"126.5vh",right:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+          case 2:$("#cuBão").animate({right: '50vh',top:"50vh",left:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+          case 3:$("#cuBão").animate({bottom: '50vh',top:"0vh",right:"50vh",left:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;indice=0;break;
+          case 4:$("#cuBão").animate({left: '126.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice = 1;document.getElementById("#btn19").innerHTML = indice;break;
+          default: indice=0;
+        }
+    });
+});
+//Atividade 20
+/*
+const ListaComprasController = ($scope) =>
+{
+    $scope.itens =
+    [
+        {produto: 'Leite', quantidade: 2, comprado: false},
+        {produto: 'Cerveja', quantidade: 12, comprado: false}
+    ];
+    $scope.adicionaItem = () => 
+    {
+        $scope.itens.push(
+            {
+                produto: $scope.item.produto,quantidade: $scope.item.quantidade,comprado: false
+            });
+        $scope.item.produto = $scope.item.quantidade = '';
+    };
+}
+describe('Lista Compras Unitário', () => 
+{
+    describe('ListaComprasController', () => 
+    {
+        beforeEach(() => 
+        {
+            this.$scope = {};
+            this.controller = new ListaComprasController(this.$scope);
+        });
+        it('deve criar "itens" com 2 ítens', () => 
+        {
+            expect(this.$scope.itens.length).toBe(2);
+        });
+        describe('adicionaItem', () => 
+        {
+            it('deve adicionar um novo ítem à lista com dados do escopo', () => 
+            {
+                this.$scope.item = {};
+                this.$scope.item.produto = 'Carne';
+                this.$scope.item.quantidade = 5;
+                this.$scope.adicionaItem();
+                expect(this.$scope.itens.length).toBe(3);
+                expect(this.$scope.itens[2].produto).toBe('Carne');
+                expect(this.$scope.itens[2].quantidade).toBe(5);
+                expect(this.$scope.itens[2].comprado).toBeFalse;
+            });
+        });
+    });
+});*/
 //S.A. Programação cliente side
 //Atividade 1
 var Yx1 = 0;
@@ -321,8 +385,8 @@ const SDAReset = () =>
     Cc(Xi=3);
     Cd(Xi=3);
     Ce(Xi=3);
-}
-const Ca = (Xi) =>
+},
+Ca = (Xi) =>
 {
     let j = parseInt(document.getElementById("C1").value) || 0;
     if(j<=0)
@@ -342,11 +406,16 @@ const Ca = (Xi) =>
     {
         j = j+1;
     }
+    if(j===1&&vb1===true&&Xi===3)
+    {
+        j=0
+        vb1=false;
+    }
     document.getElementById("C1").value = j;
     Yx1 = j * 329;
     document.getElementById("R1").innerHTML = "R$"+(parseInt(document.getElementById("C1").value) * 329)+",00"; 
-}
-const Cb = (Xi) =>
+},
+Cb = (Xi) =>
 {
     let j = parseInt(document.getElementById("C2").value) || 0;
     if(j<=0)
@@ -366,11 +435,16 @@ const Cb = (Xi) =>
     {
         j = j+1;
     }
+    if(j===1&&vb2===true&&Xi===3)
+    {
+        j=0
+        vb2=false;
+    }
     document.getElementById("C2").value = j;
     Yx2 = j * 250;
     document.getElementById("R2").innerHTML = "R$"+(parseInt(document.getElementById("C2").value) * 250)+",00";
-}
-const Cc = (Xi) =>
+},
+Cc = (Xi) =>
 {
     let j = parseInt(document.getElementById("C3").value) || 0;
     if(j<=0)
@@ -390,11 +464,16 @@ const Cc = (Xi) =>
     {
         j = j+1;
     }
+    if(j===1&&vb3===true&&Xi===3)
+    {
+        j=0
+        vb3=false;
+    }
     document.getElementById("C3").value = j;
     Yx3 = j * 245;
     document.getElementById("R3").innerHTML = "R$"+(parseInt(document.getElementById("C3").value) * 245)+",00"
-}
-const Cd = (Xi) =>
+},
+Cd = (Xi) =>
 {
     let j = parseInt(document.getElementById("C4").value) || 0;
     if(j<=0)
@@ -414,11 +493,16 @@ const Cd = (Xi) =>
     {
         j = j+1;
     }
+    if(j===1&&vb4===true&&Xi===3)
+    {
+        j=0
+        vb4=false;
+    }
     document.getElementById("C4").value = j;
     Yx4 = j * 1235;
     document.getElementById("R4").innerHTML = "R$"+(parseInt(document.getElementById("C4").value) * 1235)+",00"
-}
-const Ce = (Xi) =>
+},
+Ce = (Xi) =>
 {
     let j = parseInt(document.getElementById("C5").value) || 0;
     if(j<=0)
@@ -438,11 +522,16 @@ const Ce = (Xi) =>
     {
         j = j+1;
     }
+    if(j===1&&vb5===true&&Xi===3)
+    {
+        j=0
+        vb5=false;
+    }
     document.getElementById("C5").value = j;
     Yx4 = j * 549;
     document.getElementById("R5").innerHTML = "R$"+(parseInt(document.getElementById("C5").value) * 549)+",00"
-}
-const ATVSDA = () =>
+},
+ATVSDA = () =>
 {
     SDAReset();
     let x1 = parseInt(document.getElementById("C1").value) || 0;
@@ -457,4 +546,16 @@ const ATVSDA = () =>
     let y4 = Yx4 || 0;
     let y5 = Yx5 || 0;
     document.getElementById("R6").innerHTML = "R$"+(y1+y2+y3+y4+y5)+",00";
+},
+ATVSDAPag = () =>
+{
+    let Az = document.getElementById("Cxz1").checked;
+    let Bz = document.getElementById("Cxz2").checked;
+    let Cz = document.getElementById("Cxz3").checked;
+    let resul = "";
+
+    if(Az == true){resul = "Cartão de Credito";}
+    if(Bz == true){resul = "Cartão de Debito";}
+    if(Cz == true){resul = "Boleto";}
+    document.getElementById("idPAG").innerHTML = "Pagamento selecionado : <span class='suc'>"+resul+"</span>";
 }

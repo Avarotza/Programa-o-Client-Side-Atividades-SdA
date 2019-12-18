@@ -3,6 +3,21 @@
     font-family: "poppins";
     src: url("fonte/Poppins-Regular.ttf");
 }
+@keyframes rgb
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+    100%
+    {
+        filter: hue-rotate(0deg);
+    }
+}
 body
 {
     font-family: "Roboto",sans-serif,Verdana;
@@ -45,6 +60,17 @@ img.ATV14:hover
 {
     width: 43px;
     height: auto;
+}
+.Ajs
+{
+    width: 200px;
+    height: auto;
+}
+.jq
+{
+    width: 130px;
+    height: auto;
+    filter: invert(98%) sepia(78%) saturate(70%) hue-rotate(212deg) brightness(116%) contrast(100%);
 }
 .icone
 {
@@ -121,6 +147,14 @@ img.ATV14:hover
 .atividade18
 {
     background-color: #be3fc2;
+}
+.atividade19
+{
+    background-color: #0769ad;
+}
+.atividade20
+{
+    background-color: #dd1b16;
 }
 .atividadeSDA
 {
@@ -201,6 +235,49 @@ img.ATV14:hover
 {
     background-color: #23116b;
 }
+.atividade19 .btn-atv19
+{
+    background-color: var(--primary);
+    border: none;
+    color: #ffffff;
+    transition: .25s;
+}
+.atividade19 .btn-atv19:hover
+{
+    animation:rgb 12s ease-in-out infinite;
+    -webkit-filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
+    filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
+}
+.atividade19 .btn-atv19 + span.btn19-a:hover
+{
+    animation:rgb 12s ease-in-out reverse infinite;
+}
+.atividade19 .CuBonito
+{
+    background:var(--primary);
+    border-radius: 5px;
+    height:100px;
+    width:100px;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+}
+.atividade19 .CuBonito:hover
+{
+    animation: rgb 8s ease-in-out infinite;
+}
+.atividade20 .btn-atv20
+{
+    background-color: #a6120d ;
+    border: none;
+    color: #ffffff;
+    transition: .25s;
+}
+.atividade20 .btn-atv20:hover
+{
+    background-color: #690e0b;
+    color: #ffffff;
+}
 .atividadeSDA .btn-link
 {
     color: #343a40;
@@ -230,4 +307,8 @@ img.ATV14:hover
 {
     width: 100%;
     height: auto;
+}
+#ATV19
+{
+    padding: 0 0 50vh 0;
 }

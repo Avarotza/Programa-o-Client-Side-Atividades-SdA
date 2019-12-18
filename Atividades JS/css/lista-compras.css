@@ -1,0 +1,40 @@
+#lista-compras td, #lista-compras th
+{
+	text-align: center;
+}
+.comprado-true
+{
+	text-decoration: line-through;
+	color: red;
+}
+table#lista-compras,button
+{
+	margin-top: 0px;
+	font-family: "roboto",sans-serif;
+	margin-bottom: 0px;
+}
+h1
+{
+	font-family: "poppins",sans-serif !important;
+}
+button
+{
+	text-transform: uppercase !important;
+	font-weight: 600 !important;
+}
+a.backu
+{
+	float: right;
+}
+a.backu img
+{
+	border-bottom-left-radius: 25%;
+	width: 40px;
+	height: 40px;
+	transition: .25s;
+}
+a.backu:hover img
+{
+	-webkit-filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
+    filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
+}
