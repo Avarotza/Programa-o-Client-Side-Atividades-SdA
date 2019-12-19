@@ -26,6 +26,18 @@ a.backu
 {
 	float: right;
 }
+a.home
+{
+	float: left;
+}
+a.home img
+{
+	border-bottom-right-radius: 25%;
+	background-color: var(--light);
+	width: 40px;
+	height: 40px;
+	transition: .25s;
+}
 a.backu img
 {
 	border-bottom-left-radius: 25%;
@@ -33,7 +45,7 @@ a.backu img
 	height: 40px;
 	transition: .25s;
 }
-a.backu:hover img
+a.backu:hover img,a.home:hover img
 {
 	-webkit-filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
     filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));

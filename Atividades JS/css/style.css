@@ -240,6 +240,7 @@ img.ATV14:hover
     background-color: var(--primary);
     border: none;
     color: #ffffff;
+    cursor: pointer;
     transition: .25s;
 }
 .atividade19 .btn-atv19:hover
@@ -251,6 +252,10 @@ img.ATV14:hover
 .atividade19 .btn-atv19 + span.btn19-a:hover
 {
     animation:rgb 12s ease-in-out reverse infinite;
+}
+.atividade19 .btn-atv19:active, .atividade19 .btn-atv19.active
+{
+    background-color: #074572;
 }
 .atividade19 .CuBonito
 {

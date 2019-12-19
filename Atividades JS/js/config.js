@@ -290,18 +290,39 @@ ativ18 = () =>
     }
 }
 //Atividade 19
-$(document).ready(function()
+$(document).ready(() =>
 {
-  $("#btn19").click(function()
+    $("#btn19").click(() =>
     {
-    	switch(indice)
+        let vh = 0;
+        if(document.getElementById("Hd").checked === true){vh = 1}else if(document.getElementById("sFhd").checked === true){vh = 2}else if(document.getElementById("Fhd").checked === true){vh = 3}
+        if(vh === 1)
         {
-          case 0:$("#cuBão").animate({left: '126.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
-          case 1:$("#cuBão").animate({top: '50vh',left:"126.5vh",right:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
-          case 2:$("#cuBão").animate({right: '50vh',top:"50vh",left:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
-          case 3:$("#cuBão").animate({bottom: '50vh',top:"0vh",right:"50vh",left:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;indice=0;break;
-          case 4:$("#cuBão").animate({left: '126.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice = 1;document.getElementById("#btn19").innerHTML = indice;break;
-          default: indice=0;
+            switch(indice)
+            {
+              case 0:$("#cuBão").animate({left: '152.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+              case 1:$("#cuBão").animate({top: '50vh',left:"152.5vh",right:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+              case 2:$("#cuBão").animate({right: '50vh',top:"50vh",left:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+              case 3:$("#cuBão").animate({bottom: '50vh',top:"0vh",right:"50vh",left:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;indice=0;break;
+              case 4:$("#cuBão").animate({left: '152.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice = 1;break;
+              default: indice=0;
+            }
+        }
+        else if(vh === 2)
+        {
+            switch(indice)
+            {
+              case 0:$("#cuBão").animate({left: '126.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+              case 1:$("#cuBão").animate({top: '50vh',left:"126.5vh",right:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+              case 2:$("#cuBão").animate({right: '50vh',top:"50vh",left:"0vh",bottom:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;break;
+              case 3:$("#cuBão").animate({bottom: '50vh',top:"0vh",right:"50vh",left:"0vh"},375);indice++;document.getElementById("cuBão").innerHTML = indice;indice=0;break;
+              case 4:$("#cuBão").animate({left: '126.5vh',top:"0vh",right:"0vh",bottom:"50vh"},375);indice = 1;break;
+              default: indice=0;
+            }
+        }
+        else if(vh === 3)
+        {
+            alert("Não configurado");
         }
     });
 });
